@@ -1,0 +1,32 @@
+VendorID                 84152418
+tpep_pickup_datetime     84399019
+tpep_dropoff_datetime    84399019
+passenger_count          84152418
+trip_distance            84399019
+RatecodeID               84152418
+store_and_fwd_flag       84152418
+PULocationID             84399019
+DOLocationID             84399019
+payment_type             84152418
+fare_amount              84399019
+extra                    84399019
+mta_tax                  84399019
+tip_amount               84399019
+tolls_amount             84399019
+improvement_surcharge    84399019
+total_amount             84399019
+congestion_surcharge     79543038
+dtype: int64
+DOLocationID
+132    36706864.79
+161    36634845.95
+230    34233656.93
+236    32408040.67
+138    30766356.04
+237    30556001.18
+162    29106576.70
+170    28599202.55
+48     27346625.15
+186    23589791.70
+Name: fare_amount, dtype: float64
+Runtime: 0:00:51.244250

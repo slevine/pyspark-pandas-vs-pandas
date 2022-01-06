@@ -1,0 +1,32 @@
+VendorID                 23838931
+tpep_pickup_datetime     24648499
+tpep_dropoff_datetime    24648499
+passenger_count          23838931
+trip_distance            24648499
+RatecodeID               23838931
+store_and_fwd_flag       23838931
+PULocationID             24648499
+DOLocationID             24648499
+payment_type             23838931
+fare_amount              24648499
+extra                    24648499
+mta_tax                  24648499
+tip_amount               24648499
+tolls_amount             24648499
+improvement_surcharge    24648499
+total_amount             24648499
+congestion_surcharge     24648499
+dtype: int64
+DOLocationID
+236    10120632.76
+237     8740050.55
+161     8297369.51
+170     7237456.84
+132     6749734.12
+48      6729087.74
+162     6710259.83
+142     6705485.66
+230     6516097.75
+239     6387620.15
+Name: fare_amount, dtype: float64
+Runtime: 0:00:31.146834
