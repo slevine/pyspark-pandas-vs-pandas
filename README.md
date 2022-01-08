@@ -13,8 +13,6 @@ The goal of the code used was to highlight the fact that the only thing that nee
 - Get code and environment set up
 
 ```bash
-git clone ........
-cd ........
 pipenv install
 ```
 
@@ -38,4 +36,4 @@ python tests/tests/pandas_test.py
 
 [data]: data/README.md
 [pipenv]: https://pipenv.pypa.io/en/latest/
-[post]: TODO
+[post]: https://stevenlevine.dev/2022/01/pandas-on-spark-vs-plain-pandas/
