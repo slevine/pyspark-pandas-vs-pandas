@@ -1,10 +1,9 @@
 [tool.poetry]
-name = "poetry-pandas-vs-polars"
+name = "pandas-vs-polars"
 version = "0.1.0"
-description = ""
+description = "Benchmarking Polars vs Pandas"
 authors = ["Steven E. Levine <steve@blue64.net>"]
 readme = "README.md"
-packages = [{include = "poetry_pandas_vs_polars"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
