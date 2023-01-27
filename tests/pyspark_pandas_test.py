@@ -1,17 +1,19 @@
 from datetime import datetime
 
-from pyspark.pandas import read_csv
+from pyspark.pandas import read_parquet
 
 start = datetime.now()
 
-pdf = read_csv("./data/2020/yellow_tripdata_2020-*.csv")
+df = read_parquet("./data/2022/yellow_tripdata_2022-*.parquet")
 
-print(pdf.count())
+print(f"DF has {len(df)} rows.")
 
-res = pdf.groupby("DOLocationID")["fare_amount"] \
-    .sum() \
-    .sort_values(ascending=False) \
-    .head(10)
+res = (
+    df.groupby("DOLocationID")["fare_amount"]
+    .sum()
+    .sort_values(ascending=False)
+    .head(5)
+)
 
 print(res)
 print(f"Runtime: {datetime.now() - start}")
