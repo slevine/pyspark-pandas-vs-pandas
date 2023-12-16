@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.10"
 polars = "^0.15.18"
 pyspark = "^3.3.1"
-pyarrow = "^10.0.1"
+pyarrow = "^14.0.1"
 pandas = "^1.5.3"
 jupyterlab = "^3.5.3"
 
