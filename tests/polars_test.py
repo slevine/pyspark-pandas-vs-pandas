@@ -16,7 +16,7 @@ res = (
             pl.col("tolls_amount").sum(),
             pl.col("tip_amount").sum(),
             pl.col("congestion_surcharge").sum(),
-            pl.col("trip_distance").mean()
+            pl.col("trip_distance").mean(),
         ]
     )
     .sort(by="fare_amount")
