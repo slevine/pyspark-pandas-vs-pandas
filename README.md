@@ -12,13 +12,13 @@ exact way, a few changes were required in order to achieve the same results.
 
 ### Setup
 
-- Download 2021 and all available 2022 data   
+- Download 2021 and all available 2022 data
 
 ```bash
 mkdir data
 cd data
 for i in {01..12}; do curl https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-$i.parquet -O -s&; done; wait
-for i in {01..10}; do curl https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-$i.parquet -O -s&; done; wait
+for i in {01..12}; do curl https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-$i.parquet -O -s&; done; wait
 ```
 
 ```bash
@@ -39,19 +39,33 @@ python tests/polars_test.py
 python tests/pyspark_pandas_test.py
 ```
 
+- To run the `pyspark dataframe` version
+
+```bash
+python tests/pyspark_dataframe_test.py
+```
+
 - To run the `plain pandas` version
 
 ```bash
 python tests/tests/pandas_test.py
 ```
-   
-Alternatively, you can use this [notebook][TestRuns] to run the tests by starting a `jupyter-lab` after running `poetry install`
+
+Alternatively, you can use this [notebook][TestRuns] to run the tests by starting a `jupyter-lab` after
+running `poetry install`
 
 ### Additional Details
 
 - [Accompanying Blog Post][post]
 
 ### Change Log
+
+#### Late 2023
+
+- Added additional 2023 parquet to test
+- Added `pyspark` df version
+- Updated most libraries to latest versions available
+- Updated python to 3.11
 
 #### Early 2023
 
@@ -61,7 +75,7 @@ Alternatively, you can use this [notebook][TestRuns] to run the tests by startin
 - Added 2022 dataset
 - Changed file type to Parquet
 - Added `polars` test
-                                                  
+
 [poetry]: https://python-poetry.org/
 
 [TestRuns]: TestRuns.ipynb

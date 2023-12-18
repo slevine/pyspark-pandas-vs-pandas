@@ -1,17 +1,17 @@
 [tool.poetry]
 name = "pandas-vs-polars"
-version = "0.1.0"
+version = "0.1.1"
 description = "Benchmarking Polars vs Pandas"
 authors = ["Steven E. Levine <steve@blue64.net>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-polars = "^0.15.18"
-pyspark = "^3.3.1"
+python = "^3.11"
+polars = "^0.20.0"
+pyspark = "3.3.*"
 pyarrow = "^14.0.1"
-pandas = "^1.5.3"
-jupyterlab = "^3.5.3"
+pandas = "^2.1.4"
+jupyterlab = "^4.0.9"
 
 
 [build-system]
