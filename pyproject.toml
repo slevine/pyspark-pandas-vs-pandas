@@ -11,7 +11,7 @@ polars = "^0.20.0"
 pyspark = "3.3.*"
 pyarrow = "^14.0.1"
 pandas = "^2.1.4"
-jupyterlab = "^4.0.11"
+jupyterlab = "^4.2.5"
 
 
 [build-system]
